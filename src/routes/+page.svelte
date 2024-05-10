@@ -1,14 +1,15 @@
 <script>
 	import { Input } from '$lib/components/ui/input';
+	import { Textarea } from '$lib/components/ui/textarea';
 </script>
 
 <svelte:head>
 	<title>🎬 Trap Cosmos Render Panel</title>
 </svelte:head>
 
-<main class="grid grid-cols-2 p-16 font-montserrat">
+<main class="grid grid-cols-2 gap-12 p-12 font-montserrat">
 	<!-- LEFT PANE -->
-	<div>
+	<div class="space-y-4">
 		<h4 class="scroll-m-20 text-xl font-semibold tracking-tight text-muted-foreground">
 			New Upload
 		</h4>
@@ -29,7 +30,7 @@
 			YouTube Metadata
 		</h4>
 		<Input placeholder="if found, nøll, damnboy! - die 4 u" labelText="Title" />
-		<Input placeholder="description" labelText="Description" />
+		<Textarea placeholder="🔥 die 4 u 🔥" labelText="Description" />
 	</div>
 
 	<!-- RIGHT PANE -->
